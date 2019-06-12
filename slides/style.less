@@ -1,0 +1,475 @@
+@netflix-red: #E50914;
+@netflix-gray: #221F1F;
+@netflix-white: #F5F5F1;
+
+html, body, .remark-slide-content {
+    background: @netflix-gray;
+    font-family: "Gotham Book", "Gotham", sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: 24pt;
+    color: @netflix-white;
+}
+
+.remark-slide-content {
+
+    p:first-child {
+        margin-top: 0
+    }
+
+    padding: 36pt 96pt;
+
+    .logo, .symbol {
+        background: transparent no-repeat center center;
+        background-size: contain;
+        margin: 0 auto;
+        .alt { display: none; }
+        display: block;
+    }
+
+    .logo {
+        background-image: url(netflix-logo.png);
+        display: block;
+        height: 32pt;
+    }
+
+    .symbol {
+        background-image: url(netflix-symbol.png);
+        height: 100pt;
+        width: 55pt;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-family: "Netflix Sans", "Gotham Bold", "Gotham", sans-serif;
+        font-size: 32pt;
+        line-height: 1.1;
+        margin-top: 0;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-family: "Netflix Sans", "Gotham Book", "Gotham", sans-serif;
+        font-size: 26pt;
+        border-left: 0.1em solid @netflix-red;
+        text-align: left;
+        padding: 0 0 0 0.5em;
+    }
+
+    blockquote {
+        border-left: 0.1em solid @netflix-red;
+        text-align: left;
+        padding: 0 0 0 0.5em;
+        font-style: italic;
+        margin-left: 0;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 26pt;
+
+    }
+
+    .remark-code, .remark-inline-code {
+        font-family: 'Hasklig', 'Menlo', fixed;
+        font-variant-ligatures: discretionary-ligatures;
+    }
+
+
+    .remark-inline-code {
+        padding: 0 !important;
+        display: inline !important;
+        background: transparent !important;
+        -webkit-filter: brightness(120%);
+        -webkit-filter: contrast(120%);
+        /*background: rgba(0, 43, 54, 0.5) !important;*/
+        color: rgb(183, 205, 207);
+    }
+
+
+    a { color: #eaeaea; }
+
+    .footnote {
+      position: absolute;
+      bottom: 3em;
+      font-size: 16pt;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .left.half {
+        width: 49%;
+        float: left;
+    }
+
+    .left.forty {
+        float: left;
+        width: 39%
+    }
+
+    .right {
+        float: right;
+    }
+
+    .left.half .right {
+        width: 49%;
+    }
+
+    .left.forty + .right {
+        width: 59%
+    }
+
+    .clear { clear: both; }
+
+    .remark-inline-code { padding: 0 .2em; }
+
+    .red { color: @netflix-red; }
+
+    .light { font-weight: 300; }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sym {
+        font-family: serif;
+    }
+
+    .sym.i, .sym .i {
+        font-style: italic;
+    }
+
+    sub { font-size: 60%; }
+
+}
+
+.middle {
+    padding: 0 2em;
+    h1 {
+        font-size: 50pt;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+
+.remark-slide-content.text-table {
+    table {
+        width: 100%;
+        td, th { padding: .25em .5em; }
+        th {
+            text-align: left;
+        }
+    }
+}
+
+.remark-slide-content.two-column-table {
+    table {
+        border-collapse: collapse;
+        td, th { vertical-align: top; }
+        th {
+            border-bottom: 1px solid white;
+            border-collapse: collapse;
+        }
+        th:empty { display: none; }
+        td:first-child, th:first-child {
+            border-right: 1px solid white;
+            white-space: nowrap;
+        }
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.remark-slide-content.title {
+    /*background-image: url(netflix-symbol-big.png);
+    background-position: 200% center;*/
+    background-image: url(title-bg.png);
+    background-position: right top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding: 2em 2em 0;
+
+    h1 {
+        margin-right: 22%;
+        font-size: 50pt;
+        margin-bottom: 1em;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 120%;
+        .social {
+            padding-top: .5em;
+            position: relative;
+            font-weight: 300;
+            font-size: 80%;
+            display: block;
+            .icon {
+                position: absolute;
+                right: 100%;
+
+                white-space: nowrap;
+
+            }
+            img {
+                width: 1em;
+                margin-right: .5em;
+                display: inline;
+            }
+        }
+        width: 44%;
+    }
+
+    h1 + h3 {
+        float: left;
+        width: 33%;
+    }
+
+    h3 + h3 {
+        float: left;
+    }
+
+
+    h4 {
+        clear: left;
+        font-weight: 400;
+        font-family: "Netflix Sans", "Gotham Book", "Gotham", sans-serif;
+        font-size: 16pt;
+        border-left: 0.1em solid @netflix-red;
+        text-align: left;
+        padding: 0 0 0 0.5em;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0
+    }
+
+
+}
+
+.remark-slide-content.slightly-smaller {
+    font-size: 22pt;
+}
+
+.remark-slide-content.small-text {
+    font-size: 18pt;
+}
+
+.symbol img {
+    width: 100pt;
+    display: block;
+}
+
+.remark-slide-content.center {
+    h2 {
+        border: none;
+        text-align: center;
+    }
+}
+
+.remark-code ::selection {
+    background: black;
+}
+
+.remark-slide-content.diagram {
+    background: white;
+
+    .diagram {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.small-content {
+    font-size: 20pt;
+}
+
+.smaller-content {
+    font-size: 18pt;
+}
+
+.tiny-code .remark-code {
+    font-size: 9pt;
+}
+.small-code {
+    .remark-code {
+        font-size: 12pt;
+    }
+
+    pre {
+        margin-top: 0;
+    }
+}
+
+.smallish-code {
+    .remark-code {
+        font-size: 15pt;
+    }
+
+    pre {
+        margin-top: 0;
+    }
+}
+
+.biggish-code .remark-code {
+    font-size: 17pt;
+}
+
+.remark-code {
+    font-size: 19pt;
+}
+
+ul {
+    margin-bottom: 1em;
+}
+
+li {
+    margin: 0.5em;
+}
+
+.center {
+    text-align: center;
+}
+
+.magrit {
+    font-family: 'Satisfy', cursive;
+}
+
+.squeeze {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.squeeze-right {
+    padding-left: 25%;
+    padding-right: 15%;
+}
+
+.squeeze-more-right {
+    padding-left: 30%;
+    padding-right: 20%;
+}
+
+
+/* highlighted lines contrast */
+
+.remark-code-line-highlighted {
+    background: lighten(#002b36, 5%);
+    color: lighten(#839496, 5%);
+
+}
+
+.remark-code-span-highlighted {
+    background: lighten(#002b36, 10%);
+    color: lighten(#839496, 10%);
+    padding: 0;
+}
+
+.contrast-code .remark-code {
+    background: #002b3666;
+}
+
+.contrast-code .remark-code-line {
+    opacity: 0.5;
+}
+
+.contrast-code .remark-code-line.remark-code-line-highlighted {
+    opacity: 1.0;
+    background: #002b36;
+}
+
+.remark-slide-content img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.full-image {
+    padding: 0;
+    img {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.fit-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    p {
+        display: contents;
+    }
+}
+
+.end-title {
+    padding-right: 40%;
+    background-image: url(netflix-symbol-big.png);
+    background-repeat: no-repeat;
+    background-position: 214% center;
+}
+
+/*
+.remark-code-line-highlighted {
+    background: #fdf6e3;
+    color: #657b83
+}
+
+.remark-code-line-highlighted .hljs-comment, .remark-code-line-highlighted .hljs-quote {
+    color: #93a1a1
+}
+
+.remark-code-line-highlighted .hljs-keyword, .remark-code-line-highlighted .hljs-selector-tag, .remark-code-line-highlighted .hljs-addition {
+    color: #859900
+}
+
+.remark-code-line-highlighted .hljs-number, .remark-code-line-highlighted .hljs-string, .remark-code-line-highlighted .hljs-meta .hljs-meta-string, .remark-code-line-highlighted .hljs-literal, .remark-code-line-highlighted .hljs-doctag, .remark-code-line-highlighted .hljs-regexp {
+    color: #2aa198
+}
+
+.remark-code-line-highlighted .hljs-title, .remark-code-line-highlighted .hljs-section, .remark-code-line-highlighted .hljs-name, .remark-code-line-highlighted .hljs-selector-id, .remark-code-line-highlighted .hljs-selector-class {
+    color: #268bd2
+}
+
+.remark-code-line-highlighted .hljs-attribute, .remark-code-line-highlighted .hljs-attr, .remark-code-line-highlighted .hljs-variable, .remark-code-line-highlighted .hljs-template-variable, .remark-code-line-highlighted .hljs-class .hljs-title, .remark-code-line-highlighted .hljs-type {
+    color: #b58900
+}
+
+.remark-code-line-highlighted .hljs-symbol, .remark-code-line-highlighted .hljs-bullet, .remark-code-line-highlighted .hljs-subst, .remark-code-line-highlighted .hljs-meta, .remark-code-line-highlighted .hljs-meta .hljs-keyword, .remark-code-line-highlighted .hljs-selector-attr, .remark-code-line-highlighted .hljs-selector-pseudo, .remark-code-line-highlighted .hljs-link {
+    color: #cb4b16
+}
+
+.remark-code-line-highlighted .hljs-built_in, .remark-code-line-highlighted .hljs-deletion {
+    color: #dc322f
+}
+
+.remark-code-line-highlighted .hljs-formula {
+    background: #eee8d5
+}
+
+.hljs-solarized-light .hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-solarized-light .hljs-strong {
+    font-weight: bold
+}
+
+/**/
